@@ -1,5 +1,6 @@
 package jun.junspring;
 
+import jun.junspring.aop.TimeTraceAop;
 import jun.junspring.repository.JdbcMemberRepository;
 import jun.junspring.repository.JdbcTemplateMemberRepository;
 import jun.junspring.repository.JpaMemberRepository;
@@ -46,5 +47,10 @@ public class SpringConfig {
         //return new JdbcMemberRepository(dataSource);
         //return new JdbcTemplateMemberRepository(dataSource);
         return new JpaMemberRepository(em);
+    }*/
+
+    /*@Bean
+    public TimeTraceAop timeTraceAop() {
+        return new TimeTraceAop();
     }*/
 }
